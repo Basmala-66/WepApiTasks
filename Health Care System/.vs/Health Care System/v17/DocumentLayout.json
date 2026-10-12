@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\health care system\\health care system\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|solutionrelative:health care system\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\health care system\\health care system\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|solutionrelative:health care system\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\health care system\\health care system\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|solutionrelative:health care system\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\health care system\\health care system\\patientdtos\\getpatientresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|solutionrelative:health care system\\patientdtos\\getpatientresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\health care system\\health care system\\doctordtos\\getdoctorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|solutionrelative:health care system\\doctordtos\\getdoctorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\health care system\\health care system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|solutionrelative:health care system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\health care system\\health care system\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1DD4DAD-2BD2-4A15-BC61-1F296DCBBF87}|Health Care System\\Health Care System.csproj|solutionrelative:health care system\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 1318,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "Health Care System\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "Health Care System\\Controllers\\PatientController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAYwDkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T17:14:47.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Health Care System\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Health Care System\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA3wCgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T16:34:46.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetPatientResponse.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\PatientDTOs\\GetPatientResponse.cs",
+              "RelativeDocumentMoniker": "Health Care System\\PatientDTOs\\GetPatientResponse.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\PatientDTOs\\GetPatientResponse.cs",
+              "RelativeToolTip": "Health Care System\\PatientDTOs\\GetPatientResponse.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T17:27:43.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\Entities\\Patient.cs",
+              "RelativeDocumentMoniker": "Health Care System\\Entities\\Patient.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\Entities\\Patient.cs",
+              "RelativeToolTip": "Health Care System\\Entities\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T17:14:32.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetDoctorResponse.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\DoctorDTOs\\GetDoctorResponse.cs",
+              "RelativeDocumentMoniker": "Health Care System\\DoctorDTOs\\GetDoctorResponse.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\DoctorDTOs\\GetDoctorResponse.cs",
+              "RelativeToolTip": "Health Care System\\DoctorDTOs\\GetDoctorResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T16:37:23.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\Entities\\Appointment.cs",
+              "RelativeDocumentMoniker": "Health Care System\\Entities\\Appointment.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\Entities\\Appointment.cs",
+              "RelativeToolTip": "Health Care System\\Entities\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T16:03:08.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\Program.cs",
+              "RelativeDocumentMoniker": "Health Care System\\Program.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\Health Care System\\Health Care System\\Program.cs",
+              "RelativeToolTip": "Health Care System\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T20:11:51.424Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

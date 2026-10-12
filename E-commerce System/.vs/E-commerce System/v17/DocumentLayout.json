@@ -1,0 +1,243 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\caterorydtos\\createcategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\caterorydtos\\createcategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\e-commerce system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\e-commerce system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\orderdetailsdtos\\getorderdetailresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\orderdetailsdtos\\getorderdetailresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\entities\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\entities\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\customerdtos\\updatecustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\customerdtos\\updatecustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\customerdtos\\getcustomerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\customerdtos\\getcustomerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\customerdtos\\createcustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\customerdtos\\createcustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\orderdtos\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\orderdtos\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|c:\\users\\basma\\desktop\\depi tasks\\c#\\task 16\\e-commerce system\\e-commerce system\\orderdtos\\getorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C25D9-4C7A-45F2-935D-F5A693E1D001}|E-commerce System\\E-commerce System.csproj|solutionrelative:e-commerce system\\orderdtos\\getorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 1318,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "E-commerce System",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\E-commerce System.csproj",
+              "RelativeDocumentMoniker": "E-commerce System\\E-commerce System.csproj",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\E-commerce System.csproj",
+              "RelativeToolTip": "E-commerce System\\E-commerce System.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-10T17:26:41.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "E-commerce System\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwD0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:28:05.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateCategoryRequest.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\CateroryDTOs\\CreateCategoryRequest.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\CateroryDTOs\\CreateCategoryRequest.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\CateroryDTOs\\CreateCategoryRequest.cs",
+              "RelativeToolTip": "E-commerce System\\CateroryDTOs\\CreateCategoryRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:27:47.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "E-commerce System\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:27:06.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetOrderDetailResponse.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\OrderDetailsDTOs\\GetOrderDetailResponse.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\OrderDetailsDTOs\\GetOrderDetailResponse.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\OrderDetailsDTOs\\GetOrderDetailResponse.cs",
+              "RelativeToolTip": "E-commerce System\\OrderDetailsDTOs\\GetOrderDetailResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:24:06.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderDetailsController.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\Controllers\\OrderDetailsController.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\Controllers\\OrderDetailsController.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\Controllers\\OrderDetailsController.cs",
+              "RelativeToolTip": "E-commerce System\\Controllers\\OrderDetailsController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAwHMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:23:26.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\Entities\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\Entities\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\Entities\\OrderDetail.cs",
+              "RelativeToolTip": "E-commerce System\\Entities\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:22:28.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateCustomerRequest.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\CustomerDTOs\\UpdateCustomerRequest.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\CustomerDTOs\\UpdateCustomerRequest.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\CustomerDTOs\\UpdateCustomerRequest.cs",
+              "RelativeToolTip": "E-commerce System\\CustomerDTOs\\UpdateCustomerRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:21:58.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetCustomerResponse.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\CustomerDTOs\\GetCustomerResponse.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\CustomerDTOs\\GetCustomerResponse.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\CustomerDTOs\\GetCustomerResponse.cs",
+              "RelativeToolTip": "E-commerce System\\CustomerDTOs\\GetCustomerResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:21:57.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateCustomerRequest.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\CustomerDTOs\\CreateCustomerRequest.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\CustomerDTOs\\CreateCustomerRequest.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\CustomerDTOs\\CreateCustomerRequest.cs",
+              "RelativeToolTip": "E-commerce System\\CustomerDTOs\\CreateCustomerRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:21:43.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetOrderResponse.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\OrderDTOs\\GetOrderResponse.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\OrderDTOs\\GetOrderResponse.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\OrderDTOs\\GetOrderResponse.cs",
+              "RelativeToolTip": "E-commerce System\\OrderDTOs\\GetOrderResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:07:32.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateOrderRequest.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\OrderDTOs\\CreateOrderRequest.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\OrderDTOs\\CreateOrderRequest.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\OrderDTOs\\CreateOrderRequest.cs",
+              "RelativeToolTip": "E-commerce System\\OrderDTOs\\CreateOrderRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:07:23.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "E-commerce System\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\basma\\Desktop\\depi tasks\\c#\\task 16\\E-commerce System\\E-commerce System\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "E-commerce System\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAYwH0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T17:41:16.577Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
