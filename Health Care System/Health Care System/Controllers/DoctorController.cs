@@ -1,4 +1,5 @@
-﻿using Health_Care_System.AppointmentDTOs;
+﻿using AutoMapper;
+using Health_Care_System.AppointmentDTOs;
 using Health_Care_System.Data;
 using Health_Care_System.DoctorDTOs;
 using Health_Care_System.Entities;
@@ -14,10 +15,13 @@ namespace Health_Care_System.Controllers
     public class DoctorController : ControllerBase
     {
         private readonly AppDbContext _context;
-
-        public DoctorController(AppDbContext context)
+        private readonly IMapper _mapper;
+        private readonly ILogger<DoctorController> _logger;
+        public DoctorController(AppDbContext context, IMapper mapper ,ILogger<DoctorController> logger)
         {
             _context = context;
+            _logger = logger;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -25,27 +29,19 @@ namespace Health_Care_System.Controllers
         {
             var doctors = await _context.Doctors
                 .Include(x=>x.Appointments)
-                .Select(doctor => new GetDoctorResponse
-                {
-                    Name = doctor.Name,
-                    Specialization = doctor.Specialization,
-
-                    Appointments = doctor.Appointments.Select(a =>
-                        new GetAppointmentResponse
-                        {
-                            PatientId = a.PatientId,
-                            DoctorId = a.DoctorId,
-                            AppointmentDate = a.AppointmentDate
-                        }).ToList()
-                })
                 .ToListAsync();
 
 
-            return Ok(doctors);
+            var response = _mapper.Map<List<GetDoctorResponse>>(doctors);
+
+
+
+            return Ok(response);
         }
 
 
-        [HttpGet("id")]
+        [HttpGet]
+        [Route("GetDoctorById/{id:int}")]
         public async Task<IActionResult> getDoctorById(int id)
         {
             var doctor = await _context.Doctors
@@ -53,22 +49,13 @@ namespace Health_Care_System.Controllers
                 .FirstOrDefaultAsync(x => x.Id == id);
 
             if (doctor is null)
-                return NotFound("not found");
-
-
-            var response = new GetDoctorResponse
             {
-                Name = doctor.Name,
-                Specialization = doctor.Specialization,
+                _logger.LogWarning($"Doctor with ID {id} is not found");
+                return NotFound($"Doctor with ID {id} is not found");
+            }
 
-                Appointments = doctor.Appointments.Select(a =>
-                    new GetAppointmentResponse
-                    {
-                        PatientId = a.PatientId,
-                        DoctorId= a.DoctorId,
-                        AppointmentDate = a.AppointmentDate
-                    }).ToList()
-            };
+
+            var response = _mapper.Map<GetDoctorResponse>(doctor);
 
             return Ok(response);
         }
@@ -76,15 +63,10 @@ namespace Health_Care_System.Controllers
         [HttpPost]
         public async Task<IActionResult> createDoctor(CreateDoctorRequest request)
         {
-            var doctor = new Doctor()
-            {
-                Name = request.Name,
-                Specialization= request.Specialization,
-
-            };
+            var doctor = _mapper.Map<Doctor>(request);
 
             _context.Doctors.Add(doctor);
-            _context.SaveChanges();
+           await _context.SaveChangesAsync();
 
             return Ok(doctor);
 
@@ -97,13 +79,16 @@ namespace Health_Care_System.Controllers
             var doctor = await _context.Doctors.FirstOrDefaultAsync(x => x.Id == request.Id);
 
             if (doctor is null)
-                return NotFound("not found");
+            {
+                _logger.LogWarning($"Doctor with ID {request.Id} is not found");
+                return NotFound($"Doctor with ID {request.Id} is not found");
+            }
 
 
-           doctor.Specialization = request.Specialization;
+            _mapper.Map(request, doctor);
 
             _context.Doctors.Update(doctor);
-            _context.SaveChanges();
+          await  _context.SaveChangesAsync();
 
             return Ok(doctor);
         }
@@ -114,12 +99,16 @@ namespace Health_Care_System.Controllers
         {
             var doctor = await _context.Doctors.FirstOrDefaultAsync(x => x.Id == id);
             if (doctor is null)
-                return NotFound("not found");
+            {
+                _logger.LogWarning($"Doctor with ID {id} is not found");
+                return NotFound($"Doctor with ID {id} is not found");
+            }
 
-            _context.Doctors.Remove(doctor);
-            _context.SaveChanges();
+            doctor.IsDeleted = true;
+            await _context.SaveChangesAsync();
 
-            return Ok(doctor);
+            return Ok("Doctor Deleted Successfully!");
+
         }
     }
 }

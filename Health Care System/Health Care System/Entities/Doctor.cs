@@ -12,4 +12,8 @@ public partial class Doctor
     public string Specialization { get; set; } = null!;
 
     public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
+
+    public bool IsDeleted { get; set; }
+
+
 }

@@ -12,4 +12,7 @@ public partial class Patient
     public DateTime BirthDate { get; set; }
 
     public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
+    
+    public bool IsDeleted { get; set; }
+
 }

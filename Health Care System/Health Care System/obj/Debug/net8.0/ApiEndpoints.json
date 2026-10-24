@@ -144,7 +144,7 @@
   {
     "ContainingType": "Health_Care_System.Controllers.DoctorController",
     "Method": "getDoctorById",
-    "RelativePath": "api/Doctor/id",
+    "RelativePath": "api/Doctor/GetDoctorById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -152,7 +152,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -164,7 +164,23 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "searchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -218,7 +234,7 @@
   {
     "ContainingType": "Health_Care_System.Controllers.PatientController",
     "Method": "getPatientById",
-    "RelativePath": "api/Patient/id",
+    "RelativePath": "api/Patient/GetPatientById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -226,7 +242,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

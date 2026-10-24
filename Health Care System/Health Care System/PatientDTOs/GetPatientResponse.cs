@@ -12,14 +12,6 @@ namespace Health_Care_System.PatientDTOs
         public ICollection<GetAppointmentResponse> Appointments { get; set; }= new List<GetAppointmentResponse>();
     }
 
-
-    public class CreatePatientRequest
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime BirthDate { get; set; }
-    }
-
     public class UpdatePatientRequest
     {
         public int Id { get; set; }

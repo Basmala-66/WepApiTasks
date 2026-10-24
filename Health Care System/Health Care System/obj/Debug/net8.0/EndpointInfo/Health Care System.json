@@ -223,7 +223,7 @@
         }
       }
     },
-    "/api/Doctor/id": {
+    "/api/Doctor/GetDoctorById/{id}": {
       "get": {
         "tags": [
           "Doctor"
@@ -231,7 +231,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -249,6 +250,31 @@
       "get": {
         "tags": [
           "Patient"
+        ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "searchTerm",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -335,7 +361,7 @@
         }
       }
     },
-    "/api/Patient/id": {
+    "/api/Patient/GetPatientById/{id}": {
       "get": {
         "tags": [
           "Patient"
@@ -343,7 +369,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"

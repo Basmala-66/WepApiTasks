@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Health_Care_System.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,18 +29,7 @@ public partial class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Appointment>(entity =>
-        {
-            entity.HasKey(e => new { e.PatientId, e.DoctorId });
-
-            entity.HasIndex(e => e.DoctorId, "IX_Appointments_DoctorId");
-
-            entity.HasOne(d => d.Doctor).WithMany(p => p.Appointments).HasForeignKey(d => d.DoctorId);
-
-            entity.HasOne(d => d.Patient).WithMany(p => p.Appointments).HasForeignKey(d => d.PatientId);
-        });
-
-        OnModelCreatingPartial(modelBuilder);
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

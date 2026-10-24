@@ -1,10 +1,9 @@
-﻿using Health_Care_System.AppointmentDTOs;
+﻿using AutoMapper;
+using Health_Care_System.AppointmentDTOs;
 using Health_Care_System.Data;
 using Health_Care_System.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
 
 namespace Health_Care_System.Controllers
 {
@@ -13,37 +12,47 @@ namespace Health_Care_System.Controllers
     public class AppointmentController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly IMapper _mapper;
+        private readonly ILogger<AppointmentController> _logger;
 
-        public AppointmentController(AppDbContext context)
+        public AppointmentController(AppDbContext context,IMapper mapper ,ILogger<AppointmentController> logger)
         {
             _context = context;
+            _logger = logger;
+            _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAllAppointment()
         {
-            var appointments = await _context.Appointments.ToListAsync();
+            var appointments = await _context.Appointments
+                .Include(a => a.Doctor)
+                .ToListAsync();
 
-            return Ok(appointments);
+
+            var response = _mapper.Map<List<GetAppointmentResponse>>(appointments);
+
+            return Ok(response);
         }
 
 
         [HttpGet("id")]
         public async Task<IActionResult> getAppointmentById(int patientId,int doctorId)
         {
-            var appointment = await _context.Appointments.FirstOrDefaultAsync(x => x.PatientId == patientId && x.DoctorId == doctorId);
+            var appointment = await _context.Appointments
+             .Include(a => a.Doctor)
+             .FirstOrDefaultAsync(x =>x.PatientId == patientId && x.DoctorId == doctorId);
+
 
             if (appointment is null)
-                return NotFound("not found");
-
-
-            var response = new GetAppointmentResponse
             {
-              PatientId = appointment.PatientId,
-              DoctorId = appointment.DoctorId,
-              DoctortName = appointment.Doctor?.Name??string.Empty,
-              AppointmentDate = appointment.AppointmentDate,
-            };
+                _logger.LogWarning("Appointment for Patient {PatientId} and Doctor {DoctorId} was not found",patientId,doctorId);
+
+                return NotFound($" Appointment is not found");
+            }
+
+
+            var response = _mapper.Map<GetAppointmentResponse>(appointment);
 
             return Ok(response);
         }
@@ -51,15 +60,10 @@ namespace Health_Care_System.Controllers
         [HttpPost]
         public async Task<IActionResult> createAppointment(CreateAppointmentRequest request)
         {
-            var appointment = new Appointment()
-            {
-              PatientId= request.PatientId,
-              DoctorId= request.DoctorId,
-              AppointmentDate= request.AppointmentDate,
-            };
+            var appointment = _mapper.Map<Appointment>(request);
 
             _context.Appointments.Add(appointment);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return Ok(appointment);
 
@@ -72,14 +76,16 @@ namespace Health_Care_System.Controllers
             var appointment = await _context.Appointments.FirstOrDefaultAsync(x => x.PatientId == request.PatientId && x.DoctorId == request.DoctorId);
 
             if (appointment is null)
-                return NotFound("not found");
+            {
+                _logger.LogWarning("Appointment for Patient {PatientId} and Doctor {DoctorId} was not found", request.PatientId, request.DoctorId);
 
+                return NotFound($" Appointment is not found");
+            }
 
-            appointment.DoctorId = request.DoctorId;
-            appointment.AppointmentDate = request.AppointmentDate;
+                
+            _mapper.Map(request, appointment);
 
-            _context.Appointments.Update(appointment);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return Ok(appointment);
         }
@@ -89,13 +95,18 @@ namespace Health_Care_System.Controllers
         public async Task<IActionResult> delete(int patientId, int doctorId)
         {
             var appointment = await _context.Appointments.FirstOrDefaultAsync(x => x.PatientId == patientId && x.DoctorId == doctorId);
+
+
             if (appointment is null)
-                return NotFound("not found");
+            {
+                _logger.LogWarning("Appointment for Patient {PatientId} and Doctor {DoctorId} was not found",patientId,doctorId);
+                return NotFound($" Appointment is not found");
+            }
 
-            _context.Appointments.Remove(appointment);
-            _context.SaveChanges();
+            appointment.IsDeleted = true;
+            await _context.SaveChangesAsync();
 
-            return Ok(appointment);
+            return Ok("Appointment Deleted Successfully!");
         }
     }
 }
