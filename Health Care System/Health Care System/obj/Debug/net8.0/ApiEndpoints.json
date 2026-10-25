@@ -11,7 +11,7 @@
   },
   {
     "ContainingType": "Health_Care_System.Controllers.AppointmentController",
-    "Method": "createAppointment",
+    "Method": "CreateAppointment",
     "RelativePath": "api/Appointment",
     "HttpMethod": "POST",
     "IsController": true,
@@ -27,7 +27,7 @@
   },
   {
     "ContainingType": "Health_Care_System.Controllers.AppointmentController",
-    "Method": "updateAppointment",
+    "Method": "UpdateAppointment",
     "RelativePath": "api/Appointment",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -43,7 +43,7 @@
   },
   {
     "ContainingType": "Health_Care_System.Controllers.AppointmentController",
-    "Method": "delete",
+    "Method": "Delete",
     "RelativePath": "api/Appointment",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -64,7 +64,7 @@
   },
   {
     "ContainingType": "Health_Care_System.Controllers.AppointmentController",
-    "Method": "getAppointmentById",
+    "Method": "GetAppointmentById",
     "RelativePath": "api/Appointment/id",
     "HttpMethod": "GET",
     "IsController": true,
@@ -164,23 +164,7 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "pageNumber",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "PageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "searchTerm",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

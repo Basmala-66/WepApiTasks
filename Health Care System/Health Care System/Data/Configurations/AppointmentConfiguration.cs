@@ -10,6 +10,8 @@ namespace Health_Care_System.Data.Configurations
         {
             builder.HasKey(e=>new {e.PatientId,e.DoctorId});
 
+            builder.Ignore(e => e.Id);
+
             builder.HasIndex(e => e.DoctorId, "IX_Appointments_DoctorId");
 
             builder.HasOne(d => d.Doctor).WithMany(p => p.Appointments).HasForeignKey(d => d.DoctorId);

@@ -3,9 +3,8 @@ using System.Collections.Generic;
 
 namespace Health_Care_System.Entities;
 
-public partial class Doctor
+public partial class Doctor:BaseEntity
 {
-    public int Id { get; set; }
 
     public string Name { get; set; } = null!;
 
@@ -13,7 +12,6 @@ public partial class Doctor
 
     public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 
-    public bool IsDeleted { get; set; }
 
 
 }

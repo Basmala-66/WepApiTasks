@@ -12,10 +12,4 @@ namespace Health_Care_System.PatientDTOs
         public ICollection<GetAppointmentResponse> Appointments { get; set; }= new List<GetAppointmentResponse>();
     }
 
-    public class UpdatePatientRequest
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    }
-
 }

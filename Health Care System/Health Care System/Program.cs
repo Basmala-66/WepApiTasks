@@ -1,9 +1,8 @@
 
 using Health_Care_System.Data;
 using Health_Care_System.Data.Seeding;
-using Health_Care_System.Helper;
+using Health_Care_System.Extensions;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace Health_Care_System
 {
@@ -17,19 +16,40 @@ namespace Health_Care_System
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
 
-            builder.Services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSqlConnection"))
-            );
+            builder.Services.AddServices(builder.Configuration);
+            #region old
+            //builder.Services.AddEndpointsApiExplorer();
+            //builder.Services.AddSwaggerGen();
 
-            builder.Services.AddAutoMapper(cfg =>
-            {
-                cfg.AddProfile<PatientProfile>();
-                cfg.AddProfile<DoctorProfile>();
-                cfg.AddProfile<AppointmentProfile>();
-            });
+            //builder.Services.AddDbContext<AppDbContext>(options =>
+            //{
+            //    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSqlConnection"));
+
+
+            //    options.AddInterceptors(
+            //       new SoftDeleteInterceptor(),
+            //       new CreatedAtInterceptor(),
+            //       new ModifiedAtInterceptor());
+
+            //});
+
+
+            //builder.Services.AddScoped(
+            //     typeof(IGenericRepository<>),
+            //     typeof(GenericRepository<>)
+            //     );
+
+            //builder.Services.AddScoped<IPatientService, PatientService>();
+
+            //builder.Services.AddAutoMapper(cfg =>
+            //{
+            //    cfg.AddProfile<PatientProfile>();
+            //    cfg.AddProfile<DoctorProfile>();
+            //    cfg.AddProfile<AppointmentProfile>();
+            //});
+
+            #endregion
 
             var app = builder.Build();
 

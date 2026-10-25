@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿
 namespace Health_Care_System.Entities;
 
-public partial class Appointment
+public partial class Appointment:BaseEntity
 {
     public int PatientId { get; set; }
 
@@ -15,6 +13,5 @@ public partial class Appointment
 
     public virtual Patient Patient { get; set; } = null!;
 
-    public bool IsDeleted { get; set; }
 
 }
