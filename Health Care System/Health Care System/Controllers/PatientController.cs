@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-
 using Health_Care_System.PatientDTOs;
 using Health_Care_System.result;
 using Health_Care_System.Services;
@@ -37,98 +36,33 @@ namespace Health_Care_System.Controllers
 
             return Ok(result);
 
-            #region old
-            //List<Patient> patients;
-            //var totalCount = 0;
-
-            //if (searchTerm is not null)
-            //{
-            //    patients = await _context.Patients
-            //    .Include(x => x.Appointments)
-            //    .Where(p => p.Name.Contains(searchTerm))
-            //    .Skip((pageNumber - 1) * PageSize)
-            //    .Take(PageSize)
-            //    .ToListAsync();
-
-            //    totalCount = await _context.Patients
-            //        .CountAsync(p => p.Name.Contains(searchTerm));
-            //}
-
-            //else
-            //{
-            //    patients = await _context.Patients
-            //        .Include(x => x.Appointments)
-            //        .Skip((pageNumber - 1) * PageSize)
-            //        .Take(PageSize)
-            //        .ToListAsync();
-
-            //    totalCount = await _context.Patients.CountAsync();
-            //}
-
-
-            //    var response = _mapper.Map<List<GetPatientResponse>>(patients);
-
-            //    var paginatedList = new PaginatedList<GetPatientResponse>
-            //    {
-            //        PageSize = PageSize,
-            //        PageNumber = pageNumber,
-            //        TotalRecords = totalCount,
-            //        TotalPage = (int)Math.Ceiling(
-            //        totalCount / ((double)PageSize)),
-            //        Data = response
-            //    };
-
-
-            //var result = GenericResult<PaginatedList<GetPatientResponse>>
-            // .Success(paginatedList);
-
-            //return Ok(result);
-
-            #endregion old
+           
         }
 
 
+
         [HttpGet]
-            [Route("GetPatientById/{id:int}")]
-            public async Task<IActionResult> getPatientById(int id)
+        [Route("GetPatientById/{id:int}")]
+        [ProducesResponseType(
+            typeof(GenericResult<GetPatientResponse>),
+            StatusCodes.Status200OK)]
+
+        [ProducesResponseType(
+            typeof(GenericResult<GetPatientResponse>),
+            StatusCodes.Status404NotFound)]
+
+        [ProducesResponseType(
+            typeof(ProblemDetails),
+            StatusCodes.Status500InternalServerError)]
+
+            public async Task<IActionResult> getPatientById([FromRoute]int id)
             {
 
                 var result = await _service.GetByIdAsync(id);
 
                 return result.IsSuccess? Ok(result) : NotFound(result);
-            #region old
-            //var patient = await _context.Patients
-            //        .Include(x => x.Appointments)
-            //        .ThenInclude(d=>d.Doctor)
-            //        .FirstOrDefaultAsync(x => x.Id == id);
-
-            //if (patient is null)
-            //{
-            //    _logger.LogWarning($"Patient with ID: {id} is not found");
-            //    return NotFound($"Patient with ID: {id} is not found");
-            //}
-
-
-                //var response = new GetPatientResponse
-                //{
-                //    Name = patient.Name,
-                //    BirthDate = patient.BirthDate,
-
-                //    Appointments = patient.Appointments.Select(a =>
-                //       new GetAppointmentResponse
-                //       {
-                //           PatientId = a.PatientId,
-                //           DoctorId = a.DoctorId,
-                //           AppointmentDate = a.AppointmentDate
-                //       }).ToList()
-                //};
-
-
-                //var response = _mapper.Map<GetPatientResponse>(patient);
-
-                //return Ok(response);
-            #endregion
-        }
+            
+            }
 
         [HttpPost]
             public async Task<IActionResult> createPatient(CreatePatientRequest request)

@@ -23,6 +23,8 @@ namespace Health_Care_System.Controllers
             _logger = logger;
         }
 
+       
+
         [HttpGet]
         public async Task<IActionResult> GetAllDoctor()
         {

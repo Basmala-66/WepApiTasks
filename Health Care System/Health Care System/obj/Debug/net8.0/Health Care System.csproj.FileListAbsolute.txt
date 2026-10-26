@@ -149,3 +149,5 @@ C:\Users\basma\Desktop\depi tasks\c#\task 16\Health Care System\Health Care Syst
 C:\Users\basma\Desktop\depi tasks\c#\task 16\Health Care System\Health Care System\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\basma\Desktop\depi tasks\c#\task 16\Health Care System\Health Care System\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\basma\Desktop\depi tasks\c#\task 16\Health Care System\Health Care System\bin\Debug\net8.0\Doctors.json
+C:\Users\basma\Desktop\depi tasks\c#\task 16\Health Care System\Health Care System\bin\Debug\net8.0\Health Care System.xml
+C:\Users\basma\Desktop\depi tasks\c#\task 16\Health Care System\Health Care System\obj\Debug\net8.0\Health Care System.xml

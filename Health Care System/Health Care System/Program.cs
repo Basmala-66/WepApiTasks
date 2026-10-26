@@ -2,6 +2,8 @@
 using Health_Care_System.Data;
 using Health_Care_System.Data.Seeding;
 using Health_Care_System.Extensions;
+using Health_Care_System.Filters;
+using Health_Care_System.Middlewares;
 using Microsoft.EntityFrameworkCore;
 
 namespace Health_Care_System
@@ -14,44 +16,26 @@ namespace Health_Care_System
 
             // Add services to the container.
 
-            builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
             builder.Services.AddServices(builder.Configuration);
-            #region old
-            //builder.Services.AddEndpointsApiExplorer();
-            //builder.Services.AddSwaggerGen();
-
-            //builder.Services.AddDbContext<AppDbContext>(options =>
-            //{
-            //    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSqlConnection"));
 
 
-            //    options.AddInterceptors(
-            //       new SoftDeleteInterceptor(),
-            //       new CreatedAtInterceptor(),
-            //       new ModifiedAtInterceptor());
 
-            //});
-
-
-            //builder.Services.AddScoped(
-            //     typeof(IGenericRepository<>),
-            //     typeof(GenericRepository<>)
-            //     );
-
-            //builder.Services.AddScoped<IPatientService, PatientService>();
-
-            //builder.Services.AddAutoMapper(cfg =>
-            //{
-            //    cfg.AddProfile<PatientProfile>();
-            //    cfg.AddProfile<DoctorProfile>();
-            //    cfg.AddProfile<AppointmentProfile>();
-            //});
-
-            #endregion
+            builder.Services.AddControllers(options =>
+            {
+                options.Filters.AddService<ExceptionHandlingFilter>();
+                options.Filters.AddService<ActionExecutionLoggingFilter>();
+                options.Filters.AddService<ActionTimingFilter>();
+            });
 
             var app = builder.Build();
+
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
+            app.UseMiddleware<RequestTimingMiddleware>();
+            app.UseMiddleware<RequestIdHeaderMiddleware>();
+            app.UseMiddleware<RateLimitingMiddleware>();
+
 
             using (var scop = app.Services.CreateScope())
             {
@@ -79,11 +63,12 @@ namespace Health_Care_System
             }
 
             app.UseHttpsRedirection();
+            app.UseCors("ConfigurationOrigins");
 
             app.UseAuthorization();
 
-
             app.MapControllers();
+
 
             app.Run();
         }
