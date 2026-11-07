@@ -65,6 +65,8 @@ namespace Health_Care_System
             app.UseHttpsRedirection();
             app.UseCors("ConfigurationOrigins");
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
             app.MapControllers();

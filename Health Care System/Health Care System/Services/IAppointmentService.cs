@@ -1,4 +1,4 @@
-﻿using Health_Care_System.AppointmentDTOs;
+﻿using Health_Care_System.DTOs.AppointmentDTOs;
 using Health_Care_System.Entities;
 
 namespace Health_Care_System.Services

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using Health_Care_System.DTOs.PatientDTOs;
 using Health_Care_System.Entities;
-using Health_Care_System.PatientDTOs;
 
 namespace Health_Care_System.Helper
 {

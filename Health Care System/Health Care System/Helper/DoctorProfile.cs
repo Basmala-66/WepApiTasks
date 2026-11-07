@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Health_Care_System.DoctorDTOs;
+using Health_Care_System.DTOs.DoctorDTOs;
 using Health_Care_System.Entities;
 
 namespace Health_Care_System.Helper

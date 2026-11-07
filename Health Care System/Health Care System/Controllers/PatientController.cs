@@ -1,12 +1,13 @@
 ﻿using AutoMapper;
-using Health_Care_System.PatientDTOs;
+using Health_Care_System.DTOs.PatientDTOs;
 using Health_Care_System.result;
 using Health_Care_System.Services;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace Health_Care_System.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class PatientController : ControllerBase

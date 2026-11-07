@@ -1,11 +1,12 @@
 ﻿using AutoMapper;
-using Health_Care_System.AppointmentDTOs;
-
+using Health_Care_System.DTOs.AppointmentDTOs;
 using Health_Care_System.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Health_Care_System.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AppointmentController : ControllerBase

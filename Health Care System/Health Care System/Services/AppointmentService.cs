@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Health_Care_System.AppointmentDTOs;
+using Health_Care_System.DTOs.AppointmentDTOs;
 using Health_Care_System.Entities;
 using Health_Care_System.Repositories;
 

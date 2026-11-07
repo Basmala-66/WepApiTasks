@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Health_Care_System.DoctorDTOs;
+using Health_Care_System.DTOs.DoctorDTOs;
 using Health_Care_System.Entities;
 using Health_Care_System.Repositories;
 
